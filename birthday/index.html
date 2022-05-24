@@ -14,27 +14,14 @@
   padding: 0;
 }
   body {
-    width: 100%;
-  background: #7e94db;
-  position: absolute;
-justify-content: center;
-  float: initial;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.container{
   width: 100%;
-  min-height: 100vh;
-  display:flexbox;
-
+  background: #7e94db;
 }
 .image{
-  perspective: 3000px;
   width: 90%;
   position: absolute;
-  left:50%;
-  top:60%;
+  left: 50%; 
+  top: 60%;
   transform: translate(-50%,-60%);
   transform-style: preserve-3d;
 }
@@ -50,14 +37,33 @@ transform-style: preserve-3d;
    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px,0px,0px);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
-    </style>
+
+#lista li {
+  position: relative;
+  display: inline;
+  padding-left: 3px;
+  padding-right: 3px;
+  list-style-type: none;
+  justify-content: flex-end;
+  padding-inline-start: 70%;
+  display: block;
+}
+  </style>
 </head>
 <body>
-    <section class="container">
-        <div class="image"> 
-          <a href="https://goo.gl/maps/dANS1FYDoaFK6o5v7" target="_blank"> <img class="img" src="../resources/images/invitacion.jpg" alt="Birthday Invitation"> </a>
+  </section>
+    <section class="image">
+        <div>
+        <img class="img" src="../resources/images/invitacionSL.jpg" alt="Birthday Invitation">
         </div>
-    </section>
-    
-</body>
+      </section>
+    <div >
+      <ul id="lista">
+        <li><a href="https://goo.gl/maps/AR6goA4gb8wEK2166" target="_blank">
+          <img src="../resources/images/mapschiqui.png" alt="Maps"></a></li>
+          <li><a href= "https://calendar.google.com/event?action=TEMPLATE&tmeid=Mjk4aHZhZWF2Mm1iMDZmbXFib2YzYzA4Z3AgbWFyaWFsZWZpY2E5NjNAbQ&tmsrc=marialefica963%40gmail.com" target="_blank">
+          <img src="../resources/images/calendarchiqui.png" alt="Calendar"></a></li>
+      </ul>
+    </div>
+  </body>
 </html>
